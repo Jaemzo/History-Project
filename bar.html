@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" />
+  </head>
+  <body>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      body {
+        background-image: url("/img/outerBar.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #img-up {
+        position: absolute;
+        top: 60%;
+        left: 43.5%;
+      }
+      #img-left {
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        rotate: -90deg;
+      }
+      .buttonup {
+        position: absolute;
+        top: 60%;
+        left: 43.5%;
+        width: 124px;
+        height: 226px;
+      }
+      .buttonleft {
+        position: absolute;
+        top: 84%;
+        left: 8%;
+        width: 226px;
+        height: 124px;
+      }
+    </style>
+
+    <div>
+      <img src="./img/arrow.png" alt="" id="img-up" />
+      <a id="hit1" class="buttonup" href="inside_bar.html"></a>
+      <img src="./img/arrow.png" alt="" id="img-left" />
+      <a id="hit2" class="buttonleft" href="streets.html"></a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
