@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: black;
+        font-size: 3em;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      body {
+        background-image: url("./img/streets.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      button {
+        position: absolute;
+        width: 500px;
+        height: 200px;
+        top: 35%;
+        left: 37%;
+        justify-content: center;
+        background-color: black;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: monospace;
+        color: white;
+        padding: 20px;
+        margin-left: 10px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: white;
+        color: black;
+      }
+      .button:active {
+        background-color: white;
+        color: black;
+      }
+      .start {
+        position: absolute;
+        width: 500px;
+        height: 200px;
+        top: 35%;
+        left: 37%;
+        justify-content: center;
+      }
+      .hit-box {
+        position: absolute;
+        width: 500px;
+        height: 200px;
+        top: 35%;
+        left: 37.55%;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>The 18th Amendment</h1>
+    </div>
+    <div>
+      <button href="streets.html" class="start">Press to Start</button>
+      <a class="hit-box button" href="streets.html"></a>
+    </div>
+  </body>
+</html>
