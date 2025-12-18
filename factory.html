@@ -14,6 +14,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        background-color: darkgray;
       }
       #container {
         background-image: url("./img/factory.png");
@@ -34,6 +35,7 @@
       }
       #buttonright {
         position: absolute;
+
         top: 83.75%;
         left: 78%;
         width: 226px;
@@ -42,9 +44,15 @@
       #factoryHenry {
         position: absolute;
         left: 40%;
-        top:70%;
+        top: 70%;
         width: 150px;
         height: 275px;
+      }
+      #factoryHenry2 {
+        position: absolute;
+        left: 20%;
+        top: 65%;
+        width: 15%;
       }
       #myBtn {
         position: absolute;
@@ -52,6 +60,13 @@
         left: 40%;
         width: 150px;
         height: 275px;
+      }
+      #myBtn2 {
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        width: 290px;
+        height: 405px;
       }
       .modal {
         display: none;
@@ -77,21 +92,36 @@
     <div id="container">
       <img src="./img/arrow.png" alt="" id="img-right" />
       <a id="buttonright" href="streets.html"></a>
-    </div>
-    <div id="img">
-      <img id="factoryHenry" src="./img/Henry.png" alt="Henry" />
-    </div>
-    <a id="myBtn" href=""></a>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h1>
-            Man, the oil, tobacco, and saloon industries need to be shut down because these companies 
-            formed trusts to dominate industries, control prices, and eliminate rivals, concentrating
-            wealth and power.
-          </h1>
-        </div>
+
+      <div id="img">
+        <img id="factoryHenry" src="./img/Henry.png" alt="Henry" />
       </div>
+      <div id="img">
+        <img id="factoryHenry2" src="./img/andrew 1.jpg" alt="Henry" />
+      </div>
+      <a id="myBtn" href="#"></a>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>
+          Man, the oil, tobacco, and saloon industries need to be shut down
+          because these companies formed trusts to dominate industries, control
+          prices, and eliminate rivals, concentrating wealth and power, and
+          leaving us all in poverty.
+        </h1>
+      </div>
+    </div>
+    <a id="myBtn2" href="#"></a>
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <span class="close close2">&times;</span>
+        <h1>
+          Andrew Carnegie: Alcohol needs to be banned, all my employess haven't
+          been showing up to work because they are always drinking at the bar.
+        </h1>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

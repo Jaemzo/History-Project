@@ -14,6 +14,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        background-color: darkgray;
       }
       #container {
         background-image: url("./img/outerBar.png");
@@ -53,9 +54,35 @@
       }
       #outsideBarHenry {
         position: absolute;
-        left: 60%;
+        left: 64%;
+        top: 55%;
+        width: 13%;
+      }
+      #myBtn {
+        position: absolute;
         top: 60%;
-        width: 7%;
+        left: 64%;
+        width: 215px;
+        height: 375px;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        top: 10%;
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
       }
     </style>
 
@@ -64,9 +91,20 @@
       <a id="hit1" class="buttonup" href="inside_bar.html"></a>
       <img src="./img/arrow.png" alt="" id="img-left" />
       <a id="hit2" class="buttonleft" href="streets.html"></a>
+      <div id="img">
+        <img id="outsideBarHenry" src="./img/Henry.png" alt="#" />
+        <a id="myBtn" href="#"></a>
+      </div>
     </div>
-    <div id="img">
-      <img id="outsideBarHenry" src="./img/Henry.png" alt="Henry"/>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>
+          They must abolish alchohol! If they don't, men will just become even
+          less productive than they already are! Not to mention, overspending
+          leads to poverty, and terrible family relationships.
+        </h1>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

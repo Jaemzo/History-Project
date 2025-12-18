@@ -1,15 +1,10 @@
 var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
 var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("myBtn2");
 var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-
-span.onclick = function () {
-  modal.style.display = "none";
-};
+var span2 = document.getElementsByClassName("close")[1];
+var modalContent = document.querySelector(".modal-content");
 
 window.onclick = function (event) {
   if (event.target == modal) {
@@ -17,25 +12,33 @@ window.onclick = function (event) {
   }
 };
 
+window.onclick = function (event) {
+  if (event.target === modal) modal.style.display = "none";
+  if (event.target === modal2) modal2.style.display = "none";
+};
+
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
 btn.addEventListener("click", function (event) {
   event.preventDefault();
   modal.style.display = "block";
 });
-btn.addEventListener("click", function (event) {
+
+btn2.addEventListener("click", function (event) {
   event.preventDefault();
-  modal.style.display = "block";
+  modal2.style.display = "block";
 });
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
 
 span.addEventListener("click", function () {
   modal.style.display = "none";
 });
 
-window.addEventListener("click", function (event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-});
-
-document.getElementById("startGameBtn").addEventListener("click", () => {
-  window.location.href = "streets.html";
-});
+span2.onclick = function () {
+  modal2.style.display = "none";
+};

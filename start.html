@@ -18,6 +18,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        background-color: darkgray;
       }
       #container {
         background-image: url("./img/streets.png");
@@ -97,8 +98,11 @@
       .intro {
         top: 75%;
       }
-      #myBtn{
-        left: 40%;
+      #myBtn {
+        left: 37%;
+      }
+      #startGameBtn {
+        left: 33%;
       }
     </style>
   </head>
@@ -113,14 +117,19 @@
           <span class="close">&times;</span>
           <h1>Introduction</h1>
           <p>
-            Dating back to the 1900s, there were many movements involved in 
-            the Progressive Era. Like the Temperance Movement to 
-            ban alchohol and other substances, or the Women's Rights Movement,
-            which gave the right for women to vote, as well as equal pay
-            and social equality. 
+            Dating back to the 1900s, there were many movements involved in the
+            Progressive Era. Like the Temperance Movement to ban alchohol and
+            other substances, or the Women's Rights Movement, which gave the
+            right for women to vote, as well as equal pay and social equality.
+            Today we will be focusing on the problem with substance abuse and
+            addiction and how it affected people around America.
           </p>
           <div>
-            <button class="intro" id="startGameBtn">
+            <button
+              class="intro"
+              id="startGameBtn"
+              onclick="location.href='streets.html'"
+            >
               Press to Begin the Game!
             </button>
           </div>
