@@ -7,19 +7,10 @@ var span2 = document.getElementsByClassName("close")[1];
 var modalContent = document.querySelector(".modal-content");
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
-window.onclick = function (event) {
   if (event.target === modal) modal.style.display = "none";
   if (event.target === modal2) modal2.style.display = "none";
 };
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
 
 btn.addEventListener("click", function (event) {
   event.preventDefault();
@@ -35,10 +26,4 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 
-span.addEventListener("click", function () {
-  modal.style.display = "none";
-});
 
-span2.onclick = function () {
-  modal2.style.display = "none";
-};
